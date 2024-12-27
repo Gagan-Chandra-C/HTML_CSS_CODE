@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e8edea;
+        }
+        .navbar {
+            background-color: #24292e;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .navbar img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        .navbar h1 {
+            margin: 0 auto;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .sidebar {
+            width: 20%;
+            height: 300px;
+            background-color: #333;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .search-bar {
+            width: 75%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: rgb(64, 63, 63);
+            color: white;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+        }
+        .content .top-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 0; /* Adds margin to move the top row down */
+        }
+        .content .top-row .box {
+            width: 30%;
+            height: 100px;
+            background-color: #333;
+            border-radius: 10px;
+        }
+        .content .bottom-row {
+            width: 100%;
+            height: 150px;
+            background-color: #333;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+        </div>
+        <h1>GITHUB</h1>
+    </div>
+    <div class="container">
+        <input type="text" class="search-bar" placeholder="Search">
+        <div class="main-content">
+            <div class="sidebar"></div>
+            <div class="content">
+                <div class="top-row">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="bottom-row"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
